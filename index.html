@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/triangle.png" type="image/x-icon">
+    <title>GEOMETRY GENIUS 2.0</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+            <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+     <!-- HEADER START -->
+     <header>
+        <nav class="navbar d-flex p-lg-1">
+            <div class="navbar-heading p-2">
+                <div class="main-heading display-6 fw-bolder">Interactive</div>
+                <div class="sub-heading">Geometry Genius</div>
+            </div>
+            <div class="navbar-blog ms-auto p-3">
+                <button class=" btn btn-primary"><a href="./blog.html"
+                        style="text-decoration: none; color: black;">Blog</a></button>
+            </div>
+        </nav>
+    </header>
+     <!-- MAIN START -->
+     <main>
+        <!-- SECTION 01 -->
+        <section class="section-1">
+            <div class="section1-left">
+                <div class="section1-card1 triangle">
+                    <div class="image1"><img src="./images/triangle.png" alt="triangle" class="img-design img-fluid ">
+                    </div>
+                    <div class="section1-card1-heading" id="tri-heading">
+                        Triangle
+                    </div> 
+                    <div class="section1-card1-formula">
+                        Area (A) = 0.5 x <span id="tri-base">b</span> x <span id="tri-height">h</span>
+                    </div>
+                    <div class="section1-card1-inputbox">
+                        <input type="text" id="tri-input1" placeholder="b"> cm <input type="text" id="tri-input2"
+                            placeholder="h"> cm
+                    </div>
+                    <div class="section1-card1-calculate">
+                        <button class="btn btn-primary" id="triangle-calculate">Calculate</button>
+                    </div>
+                </div>
+                <div class="section1-card1 rectangle">
+                    <div class="image1"><img src="images/rectangle.png" alt="triangle" class="img-design img-fluid ">
+                    </div>
+                    <div class="section1-card1-heading">
+                        <span id="rectangle-heading">Rectangle</span>
+                    </div>
+                    <div class="section1-card1-formula">
+                        Area (A) = <span id="rec-base">w</span> x <span id="rec-height">l</span>
+                    </div>
+                    <div class="section1-card1-inputbox">
+                        <input type="text" id="rec-input1" placeholder="w"> cm <input id="rec-input2" type="text"
+                            placeholder="l"> cm
+                    </div>
+                    <div class="section1-card1-calculate">
+                        <button class="btn btn-primary" id="rectangle-calculate">Calculate</button>
+                    </div>
+                </div>
+                <div class="section1-card1 parallelogram">
+                    <div class="image1"><img src="images/parallelogram.png" alt="triangle"
+                            class="img-design img-fluid "></div>
+                    <div class="section1-card1-heading">
+                        <span id="para-heading"> Parallelogram</span>
+                    </div>
+                    <div class="section1-card1-formula">
+                        Area (A) = <span id="para-base">b</span> x <span id="para-height">h</span>
+                    </div>
+                    <div class="section1-card1-inputbox">
+                        b = <span id="para-value1">10</span>cm, h= <span id="para-value2">12</span>cm
+                    </div>
+                    <div class="section1-card1-calculate">
+                        <button class="btn btn-primary" id="para-calculate">Calculate</button>
+                    </div>
+                </div>
+                <div class="section1-card1 rhombus">
+                    <div class="image1"><img src="images/rhombus.png" alt="triangle" class="img-design img-fluid ">
+                    </div>
+                    <div class="section1-card1-heading">
+                        <span id="rom-heading">Rhombus</span>
+                    </div>
+                    <div class="section1-card1-formula">
+                        Area (A) = 0.5 x <span id="rom-base">d<sub>1</sub></span> x <span
+                            id="rom-height">d<sub>2</sub></span>
+                        </div>
+                        <div class="section1-card1-inputbox">
+                            d<sub>1</sub> = <span id="rom-value1">16</span>cm, d<sub>2</sub>= <span
+                                id="rom-value2">8</span>cm
+                        </div>
+                        <div class="section1-card1-calculate">
+                            <button class="btn btn-primary" id="rombhos-calculate">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="section1-card1 pentagon">
+                        <div class="image1"><img src="images/pentagon.png" alt="pentagon" class="img-design img-fluid ">
+                        </div>
+                        <div class="section1-card1-heading">
+                            <span id="penta-heading">Pentagon</span>
+                        </div>
+                        <div class="section1-card1-formula">
+                            Area (A) = 0.5 x <span id="penta-base">p</span> x <span id="penta-height">b</span>
+                        </div>
+                        <div class="section1-card1-inputbox">
+                            p = <span id="penta-value1">18</span>cm, b= <span id="penta-value2">8</span>cm
+                        </div>
+                        <div class="section1-card1-calculate">
+                            <button class="btn btn-primary" id="calculate-pentagon">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="section1-card1 ellipse">
+                        <div class="image1"><img src="images/ellipse.png" alt="ellipse" class="img-design img-fluid "></div>
+                        <div class="section1-card1-heading">
+                            <span id="ell-heading"> Ellipse</span>
+                        </div>
+                        <div class="section1-card1-formula">
+                            Area (A) = &pi; x <span id="ell-base">a</span> x <span id="ell-height">b</span>
+                        </div>
+                        <div class="section1-card1-inputbox">
+                            a = <span id="ell-value1">10</span>cm, b= <span id="ell-value2">4</span>cm
+                        </div>
+                        <div class="section1-card1-calculate">
+                            <button class="btn btn-primary" id="ell-calculate">Calculate</button>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="section1-right">
+                    <div class="section1-card-result">
+                        <div class="section1-card1">
+    
+                            <div class="section1-card1-heading">
+                                Area Calculation
+                            </div>
+                            <hr>
+                            <!-- FINISH THE WORK -->
+                            <!-- START Calculation..... -->
+                        <ol type="1" id="ol-list">
+                            <li class="list-items">
+                                <div class="mylist-items">
+                                    <div class="name" id="name"></div>
+                                    <div class="result"><span id="result"></span><span id="c">c</span>m<sup>2</sup>
+                                    </div>
+                                    <div class="convert" id="convert"> <button
+                                            class="btn btn-primary convert-btn">Convert to m<sup>2</sup></button></div>
+                                    <div class="convert" id="convert"> <button class="btn btn-danger"
+                                            id="cross-btn">X</button></div>
+                                </div>
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End of the section -->
+    </main>
+    <!-- FOOTER START -->
+    <footer>
+        <section>
+            <div class="footer">
+                Developed by <a href="https://www.facebook.com/rakibulislam.utsho/" style="text-decoration: none;">Md. Rakibul Islam</a>
+            </div>
+        </section>
+    </footer>
+    <!-- done footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+        <script src="./js/customjs.js"></script>
+</body>
+</html>
